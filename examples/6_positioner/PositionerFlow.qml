@@ -20,5 +20,12 @@ Window {
         Rectangle { width: 100; height: width; radius: 20; color: "skyblue" }
         Rectangle { width: 100; height: width; radius: 20; color: "deepskyblue" }
         Rectangle { width: 100; height: width; radius: 20; color: "lime" }
+
+        move: Transition {
+            NumberAnimation {
+                properties: "x, y"
+                duration: 1000
+            }
+        }
     }
 }

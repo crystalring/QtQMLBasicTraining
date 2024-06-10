@@ -18,12 +18,22 @@ Window {
         Text {
             width: parent.width
             height: parent.height
-            text: "Hello World! with a long text"
+
+            text: "Hello World! with a long text. Hello World! with a long text. Hello World! with a long text. Hello World! with a long text"
             font.family: "Helvetica"
             font.pointSize: 24
             color: "darkgreen"
-           // elide: Text.ElideRight
-           // wrapMode: Text.WordWrap
+            elide: Text.ElideRight
+            wrapMode: Text.WordWrap
+            maximumLineCount: 3
+
+            // Rectangle {
+            //     width: parent.width
+            //     height: parent.height
+            //     color: "transparent"
+            //     border.color: "red"
+            //     border.width: 5
+            // }
         }
     }
 }

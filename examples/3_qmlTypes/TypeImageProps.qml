@@ -9,6 +9,7 @@ Window {
 
     Image {
         source: Qt.resolvedUrl('images/qt-logo.png')
+        fillMode: Image.PreserveAspectFit
     }
 }
 

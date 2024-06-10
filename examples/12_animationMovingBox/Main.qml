@@ -1,8 +1,8 @@
 ﻿import QtQuick
 import QtQuick.Window
 
-AnimationNone { }
+// AnimationNone { }
 // AnimationStandalone { }
 // AnimationBehavior { }
-// AnimationSequential { }
+AnimationSequential { }
 

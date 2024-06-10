@@ -8,15 +8,34 @@ Window {
     visible: true
     title: qsTr("Positioner")
 
-    // Row {
-   Column {
+
+    Column {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
-        spacing: 5
+        spacing: 50
 
-        Rectangle { width: 100; height: width; radius: 20; color: "#024c1c" }
-        Rectangle { width: 100; height: width; radius: 20; color: "#42a51c" }
-        Rectangle { width: 100; height: width; radius: 20; color: "red" }
-        Rectangle { width: 100; height: width; radius: 20; color: Qt.rgba(1, 1, 0, 1) }
+        Row {
+            spacing: 5
+            Rectangle { width: 100; height: width; radius: 20; color: "#024c1c" }
+            Text { text: "text 1"; anchors.verticalCenter: parent.verticalCenter}
+        }
+
+        Row {
+            spacing: 5
+            Rectangle { width: 100; height: width; radius: 20; color: "#42a51c" }
+            Text { text: "text 2"; anchors.verticalCenter: parent.verticalCenter}
+        }
+
+        Row {
+            spacing: 5
+            Rectangle { width: 100; height: width; radius: 20; color: "red" }
+            Text { text: "text 3"; anchors.verticalCenter: parent.verticalCenter}
+        }
+
+        Row {
+            spacing: 5
+            Rectangle { width: 100; height: width; radius: 20; color: Qt.rgba(1, 1, 0, 1) }
+            Text { text: "text 4"; anchors.verticalCenter: parent.verticalCenter}
+        }
     }
 }

@@ -16,35 +16,36 @@ Window {
         color: "darkgreen"
         border { color: "black"; width: 1 }
 
-        MouseArea {
-            anchors.fill: parent
-            onClicked: console.log("clicked", mouse.x, mouse.y)
-        }
+        // MouseArea {
+        //     anchors.fill: parent
+        //     onClicked: console.log("clicked", mouse.x, mouse.y)
+        // }
 
-        MouseArea {
-            anchors.fill: parent
-            onClicked: function myHandler(mouse) {
-                console.log("clicked 2", mouse.x, mouse.y)
-            }
-        }
+        // MouseArea {
+        //     anchors.fill: parent
+        //     onClicked: function myHandler(mouse) {
+        //         console.log("clicked 2", mouse.x, mouse.y)
+        //     }
+        // }
 
-        MouseArea {
-            anchors.fill: parent
-            onClicked: function (mouse) {
-                console.log("clicked 3", mouse.x, mouse.y)
-            }
-        }
+        // MouseArea {
+        //     anchors.fill: parent
+        //     onClicked: function (mouse) {
+        //         console.log("clicked 3", mouse.x, mouse.y)
+        //     }
+        // }
 
-        MouseArea {
-            anchors.fill: parent
-            onClicked: (mouse) => {
-                console.log("clicked 4", mouse.x, mouse.y)
-            }
-        }
+        // MouseArea {
+        //     anchors.fill: parent
+        //     onClicked: (mouse) => {
+        //         console.log("clicked 4", mouse.x, mouse.y)
+        //     }
+        // }
 
         MouseArea {
             anchors.fill: parent
             onClicked: (mouse) => console.log("clicked 5", mouse.x, mouse.y)
+            onWheel: (wheel) => ( console.log("wheel!!"))
         }
     }
 }

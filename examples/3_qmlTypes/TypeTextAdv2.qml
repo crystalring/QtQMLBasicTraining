@@ -16,14 +16,15 @@ Window {
         border { color: "black"; width: 1 }
 
         Text {
+            // anchors.centerIn: parent
             width: parent.width
             height: parent.height
             text: "Hello World!"
             font.family: "Helvetica"
             font.pointSize: 24
             color: "yellow"
-            // verticalAlignment: Text.AlignVCenter
-            // horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignBottom
+            horizontalAlignment: Text.AlignHCenter
         }
     }
 }

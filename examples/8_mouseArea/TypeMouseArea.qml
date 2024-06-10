@@ -2,6 +2,7 @@
 import QtQuick.Window
 
 Window {
+    id: window
     width: 400
     height: 300
     visible: true
@@ -18,11 +19,21 @@ Window {
 
         MouseArea {
             anchors.fill: parent
-            onPressed: console.log("pressed")
-            onReleased: console.log("released")
-            onClicked: console.log("clicked")
-            onDoubleClicked: console.log("double clicked")
-            onPositionChanged: console.log("position changed")
+            hoverEnabled: true
+            onPressed:  _rect.color = "red"
+            onReleased: _rect.color = "aqua"
+            // emit entered
+            onDoubleClicked: {
+                window.close()
+            }
+
+            onEntered: {
+                _rect.color = "aqua"
+            }
+            // emit exited
+            onExited: {
+                _rect.color = "lightgray"
+            }
         }
     }
 }

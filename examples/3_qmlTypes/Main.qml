@@ -13,9 +13,9 @@ import QtQuick.Window
 
 // TypeImageNetwork { }
 // TypeImageFileSystem { }
-TypeImageResource { }
+// TypeImageResource { }
 // TypeImageProps { }
-// TypeImageTransform { }
+TypeImageTransform { }
 
 
 // TypeMouseArea { }

@@ -12,14 +12,7 @@ Window {
         width: 100
         height: 100
         color: "red"
-    }
-
-    Rectangle {
-        x: 20
-        y: 20
-        width: 100
-        height: 100
-        color: "orange"
+        z: 1
     }
 
     Rectangle {
@@ -44,5 +37,13 @@ Window {
         width: 100
         height: 100
         color: "blue"
+
+        Rectangle {
+            x: 20
+            y: 20
+            width: 100
+            height: 100
+            color: "orange"
+        }
     }
 }

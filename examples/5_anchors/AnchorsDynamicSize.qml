@@ -12,6 +12,8 @@ Window {
         width: 100
         height: 100
         color: "red"
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
     }
 
     Rectangle {
@@ -21,6 +23,8 @@ Window {
         color: "blue"
         anchors.left: _redRect.right
         anchors.right: _orangeRect.left
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
     }
 
     Rectangle {
@@ -29,6 +33,9 @@ Window {
         width: 100
         height: 100
         color: "orange"
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
     }
 }
 

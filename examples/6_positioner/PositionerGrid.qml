@@ -11,7 +11,7 @@ Window {
     Grid {
         anchors.centerIn: parent
         spacing: 5
-        // columns: 3
+        columns: 3
 
         Rectangle { width: 100; height: width; radius: 20; color: "#024c1c" }
         Rectangle { width: 100; height: width; radius: 20; color: "#42a51c" }

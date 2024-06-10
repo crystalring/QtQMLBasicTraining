@@ -8,7 +8,10 @@ Window {
     title: qsTr("Hello World")
 
     Image {
+        anchors.centerIn: parent
         source: Qt.resolvedUrl('images/qt-logo.png')
+        rotation: 60
+        transformOrigin: Item.BottomRight
     }
 }
 

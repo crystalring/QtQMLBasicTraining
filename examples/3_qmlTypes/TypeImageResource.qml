@@ -2,13 +2,17 @@
 import QtQuick.Window
 
 Window {
-    width: 640
-    height: 480
+    width: 1080
+    height: 720
     visible: true
     title: qsTr("Hello World")
 
     Image {
-        source: "qrc:/qmltypes/images/qt-logo.png"
+        width: parent.width
+        height: parent.height
+        // source: "qrc:/qmltypes/images/qt-logo.png"
+        // source: Qt.resolvedUrl("images/qt-logo.png")
+        source: Qt.resolvedUrl("images/qt-logo")
     }
 }
 

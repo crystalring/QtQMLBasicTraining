@@ -11,9 +11,8 @@ Window {
         id: _rect
         width: 200
         height: 48
-
-        x: 50
         anchors.centerIn: parent
+
         color: "skyblue"
         border.color: "lightgray"
 

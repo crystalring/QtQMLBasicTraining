@@ -9,11 +9,10 @@ Window {
     title: qsTr("Hello World")
 
     Rectangle {
-        x: 20
         width: 300
         height: 200
-        // anchors.left: parent.left
-        // anchors.leftMargin: 20
+        anchors.left: parent.left
+        anchors.leftMargin: 20
         anchors.bottom: parent.bottom        
         anchors.bottomMargin: 20
         color: "orange"
@@ -27,13 +26,12 @@ Window {
     }
 
     Rectangle {
-        y: 20
         width: 20
         height: width
         radius: width / 2
         anchors.horizontalCenter: parent.horizontalCenter
-        // anchors.top: parent.top
-        // anchors.topMargin: 20
+        anchors.top: parent.top
+        anchors.topMargin: 20
         color: "blue"
     }
 

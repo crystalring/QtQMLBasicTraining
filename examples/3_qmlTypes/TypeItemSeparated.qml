@@ -10,12 +10,12 @@ Window {
     // not related
     Rectangle {
         x: 50
-        y: 50
+        y: 150
         width: 300
         height: 400
         color: "red"
 
-        // rotation: 45
+        rotation: 45
     }
 
     Text {

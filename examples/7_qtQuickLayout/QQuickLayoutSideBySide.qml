@@ -32,6 +32,7 @@ Window {
             Layout.fillWidth: true
             Layout.fillHeight: true
             Layout.minimumWidth: 100
+            // Layout.maximumWidth: 600
 
             Text {
                 anchors.centerIn: parent
