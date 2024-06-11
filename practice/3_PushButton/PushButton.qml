@@ -41,28 +41,28 @@ Rectangle {
         anchors.fill: _rect
         hoverEnabled: true
 
-        onPressed: {
+        onPressed: {  // pressed state
             // console.log("Pressed")
             _rect.color = "deepskyblue"
             _text.anchors.verticalCenterOffset = 1
             _text.anchors.horizontalCenterOffset = 1
         }
 
-        onReleased: {
+        onReleased: { // normal state
             // console.log("Released")
             _rect.color = "skyblue"
             _text.anchors.verticalCenterOffset = 0
             _text.anchors.horizontalCenterOffset = 0
         }
 
-        onEntered: {
+        onEntered: {  // hover state
             // console.log("Entered")
             _rect.color = _rect.hoverColor
         }
 
         onExited: {
             // console.log("Exited")
-            _rect.color = "skyblue"
+            _rect.color = "skyblue" // normal
         }
 
         onClicked: {

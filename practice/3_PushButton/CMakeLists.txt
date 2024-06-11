@@ -22,6 +22,7 @@ qt_add_qml_module(appPushButton
         WindowPushButtonV3.qml
         WindowPushButtonV4.qml
         PushButton.qml
+        PushButtonV2.qml
 )
 
 set_target_properties(appPushButton PROPERTIES

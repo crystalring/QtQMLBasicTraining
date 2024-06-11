@@ -17,7 +17,7 @@ Window {
         spacing: 10
 
         PushButton {
-            text: "1st Button"
+            text: "1st PushButton"
             onClicked: {
                 debugText.text = "1st Button Clicked"
             }
@@ -25,7 +25,7 @@ Window {
 
         PushButton {
             id: button2
-            text: "2nd Button"
+            text: "2nd PushButton"
             hoverColor: "lightpink"
             fontColor: "white"
 
@@ -34,10 +34,24 @@ Window {
             // }
         }
 
+        PushButtonV2 {
+            text: "1st PushButtonV2"
+            onClicked: {
+                debugText.text = "1st Button Clicked"
+            }
+        }
+
+        PushButtonV2 {
+            text: "2nd PushButtonV2"
+            hoverColor: "lightpink"
+            fontColor: "white"
+        }
+
         Text {
             id: debugText
 
             font.pixelSize: 20
+            text: "textChanged"
             onTextChanged: {
                 console.log("textChanged " + text)
             }
