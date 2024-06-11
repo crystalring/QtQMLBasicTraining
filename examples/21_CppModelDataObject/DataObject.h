@@ -15,6 +15,7 @@ public:
     }
     QString name() const;
     void setName(const QString &newName);
+
     QString itemColor() const;
     void setItemColor(const QString &newItemColor);
 

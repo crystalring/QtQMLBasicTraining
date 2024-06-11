@@ -71,13 +71,8 @@ Window {
                 from: "*"
                 to: "@opened"
                 AnchorAnimation { duration: 500 }
+                PropertyAnimation { property: "opacity"; duration: 5000 }
             }
-            // ,
-            // Transition {
-            //     from: "*"
-            //     to: "@opened"
-            //     PropertyAnimation { target: shadow; property: "opacity"; duration: 5000 }
-            // }
         ]
     }
 }

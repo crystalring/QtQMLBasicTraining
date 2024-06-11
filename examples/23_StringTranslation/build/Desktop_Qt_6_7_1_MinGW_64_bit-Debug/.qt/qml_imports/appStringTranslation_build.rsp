@@ -1,0 +1,14 @@
+-rootPath
+C:/repo/QtQMLBasicTraining/examples/23_StringTranslation
+-cmake-output
+-output-file
+C:/repo/QtQMLBasicTraining/examples/23_StringTranslation/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qt/qml_imports/appStringTranslation_build.cmake
+-importPath
+C:/repo/QtQMLBasicTraining/examples/23_StringTranslation/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/StringTranslation
+-importPath
+C:/repo/QtQMLBasicTraining/examples/23_StringTranslation/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug
+-importPath
+C:/Qt/6.7.1/mingw_64/./qml
+-qrcFiles
+C:/repo/QtQMLBasicTraining/examples/23_StringTranslation/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qt/rcc/qmake_StringTranslation.qrc
+C:/repo/QtQMLBasicTraining/examples/23_StringTranslation/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qt/rcc/appStringTranslation_raw_qml_0.qrc

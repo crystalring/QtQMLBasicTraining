@@ -1,0 +1,14 @@
+-rootPath
+C:/repo/QtQMLBasicTraining/examples/18_CppQQuickPaintedItem
+-cmake-output
+-output-file
+C:/repo/QtQMLBasicTraining/examples/18_CppQQuickPaintedItem/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qt/qml_imports/appCppQQuickPaintedItem_conf.cmake
+-importPath
+C:/repo/QtQMLBasicTraining/examples/18_CppQQuickPaintedItem/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CppQQuickPaintedItem
+-importPath
+C:/repo/QtQMLBasicTraining/examples/18_CppQQuickPaintedItem/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug
+-importPath
+C:/Qt/6.7.1/mingw_64/./qml
+-qrcFiles
+C:/repo/QtQMLBasicTraining/examples/18_CppQQuickPaintedItem/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qt/rcc/qmake_CppQQuickPaintedItem.qrc
+C:/repo/QtQMLBasicTraining/examples/18_CppQQuickPaintedItem/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qt/rcc/appCppQQuickPaintedItem_raw_qml_0.qrc

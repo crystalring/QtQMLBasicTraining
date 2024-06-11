@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/CppListModel/">
+    <file alias="Main.qml">C:/repo/QtQMLBasicTraining/examples/22_CppListModel/Main.qml</file>
+    <file alias="ListViewQmlModel.qml">C:/repo/QtQMLBasicTraining/examples/22_CppListModel/ListViewQmlModel.qml</file>
+  </qresource>
+</RCC>
+

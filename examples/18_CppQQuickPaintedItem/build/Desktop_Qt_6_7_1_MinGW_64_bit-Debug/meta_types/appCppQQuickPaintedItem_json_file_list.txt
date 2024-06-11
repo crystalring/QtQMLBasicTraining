@@ -1,0 +1,1 @@
+C:/repo/QtQMLBasicTraining/examples/18_CppQQuickPaintedItem/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/appCppQQuickPaintedItem_autogen/include/../EWIEGA46WW/moc_PieChart.cpp.json

@@ -1,0 +1,14 @@
+-rootPath
+C:/repo/QtQMLBasicTraining/examples/22_CppListModel
+-cmake-output
+-output-file
+C:/repo/QtQMLBasicTraining/examples/22_CppListModel/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qt/qml_imports/appCppListModel_conf.cmake
+-importPath
+C:/repo/QtQMLBasicTraining/examples/22_CppListModel/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CppListModel
+-importPath
+C:/repo/QtQMLBasicTraining/examples/22_CppListModel/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug
+-importPath
+C:/Qt/6.7.1/mingw_64/./qml
+-qrcFiles
+C:/repo/QtQMLBasicTraining/examples/22_CppListModel/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qt/rcc/qmake_CppListModel.qrc
+C:/repo/QtQMLBasicTraining/examples/22_CppListModel/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qt/rcc/appCppListModel_raw_qml_0.qrc

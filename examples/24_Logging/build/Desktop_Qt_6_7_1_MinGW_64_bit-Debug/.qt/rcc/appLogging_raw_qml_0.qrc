@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Logging/">
+    <file alias="Main.qml">C:/repo/QtQMLBasicTraining/examples/24_Logging/Main.qml</file>
+  </qresource>
+</RCC>
+

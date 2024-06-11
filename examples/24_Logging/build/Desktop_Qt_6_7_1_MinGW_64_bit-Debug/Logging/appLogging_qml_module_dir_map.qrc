@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/Logging">C:/repo/QtQMLBasicTraining/examples/24_Logging/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Logging</file>
+
+  </qresource>
+</RCC>

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/CppListModel">
+    <file alias="qmldir">C:/repo/QtQMLBasicTraining/examples/22_CppListModel/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CppListModel/qmldir</file>
+  </qresource>
+</RCC>
+

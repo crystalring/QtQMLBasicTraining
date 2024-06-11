@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/StringTranslation/">
+    <file alias="Main.qml">C:/repo/QtQMLBasicTraining/examples/23_StringTranslation/Main.qml</file>
+  </qresource>
+</RCC>
+

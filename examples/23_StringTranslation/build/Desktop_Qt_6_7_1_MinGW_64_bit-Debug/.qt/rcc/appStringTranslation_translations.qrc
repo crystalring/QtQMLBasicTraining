@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/i18n">
+    <file alias="app_ko_KR.qm">C:/repo/QtQMLBasicTraining/examples/23_StringTranslation/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/app_ko_KR.qm</file>
+    <file alias="app_fr_FR.qm">C:/repo/QtQMLBasicTraining/examples/23_StringTranslation/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/app_fr_FR.qm</file>
+  </qresource>
+</RCC>
+
