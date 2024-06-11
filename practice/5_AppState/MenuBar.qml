@@ -9,6 +9,8 @@ Rectangle {
     border.width: 1
     border.color: "darkgray"
 
+    signal clicked()
+
     Image {
         anchors.left: parent.left
         anchors.top: parent.top
@@ -27,6 +29,9 @@ Rectangle {
             id: mouseArea
             anchors.fill: parent
             hoverEnabled: true
+            onClicked: {
+                _root.clicked()
+            }
         }
     }
 }

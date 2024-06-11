@@ -8,6 +8,10 @@ Rectangle {
 
     signal iconClicked
 
+    MouseArea {
+        anchors.fill: parent
+    }
+
     Image {
         anchors.right: parent.right
         anchors.top: parent.top
@@ -27,6 +31,9 @@ Rectangle {
             id: mouseArea
             anchors.fill: parent
             hoverEnabled: true
+            onClicked: {
+                _root.iconClicked()
+            }
         }
     }
 }

@@ -5,8 +5,13 @@ Rectangle {
     color: "black"
     opacity: 0.0
 
+    signal shadowClicked()
+
     MouseArea {
         anchors.fill: parent
+        onClicked: {
+            _root.shadowClicked()
+        }
     }
 }
 

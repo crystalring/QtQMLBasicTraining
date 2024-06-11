@@ -18,6 +18,10 @@ Window {
             anchors.right: parent.right
             anchors.top: parent.top
             height: 64
+
+            onClicked: {
+                item.state = "@opened"
+            }
         }
 
         Contents {
@@ -29,6 +33,10 @@ Window {
             Shadow {
                 id: shadow
                 anchors.fill: parent
+
+                onShadowClicked: {
+                    item.state = ""
+                }
             }
         }
 
@@ -37,6 +45,39 @@ Window {
             anchors.right: item.left
             anchors.top: parent.top
             anchors.bottom: parent.bottom
+
+            onIconClicked: {
+                item.state = ""
+            }
         }
+
+        states: [
+            State {
+                name: "@opened"
+                AnchorChanges {
+                    target: menuPane
+                    anchors.left: item.left
+                    anchors.right: undefined
+                }
+
+                PropertyChanges {
+                    target: shadow
+                    opacity: 0.5
+                }
+            }
+        ]
+        transitions: [
+            Transition {
+                from: "*"
+                to: "@opened"
+                AnchorAnimation { duration: 500 }
+            }
+            // ,
+            // Transition {
+            //     from: "*"
+            //     to: "@opened"
+            //     PropertyAnimation { target: shadow; property: "opacity"; duration: 5000 }
+            // }
+        ]
     }
 }
