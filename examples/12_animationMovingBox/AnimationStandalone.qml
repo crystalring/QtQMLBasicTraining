@@ -24,19 +24,27 @@ Window {
     MouseArea {
         anchors.fill: parent
         onClicked: (mouse) => {
-            _aniX.to = mouse.x;
+            // _aniX.to = mouse.x;
             _aniY.to = mouse.y;
-            _aniColor.to = Qt.rgba(Math.random(), Math.random(), Math.random())
+            // _aniColor.to = Qt.rgba(Math.random(), Math.random(), Math.random())
 
-            _aniX.start();
+            // _aniX.start();
             _aniY.start();
-            _aniColor.start();
+            // _aniColor.start();
         }
     }
 
-    NumberAnimation { id: _aniX; target: _rect; property: "x"; duration: 2000 }
-    NumberAnimation { id: _aniY; target: _rect; property: "y"; duration: 2000 }
-    ColorAnimation { id: _aniColor; target: _rect; property: "color"; duration: 2000 }
+    NumberAnimation
+    {
+        id: _aniX
+        target: _rect
+        property: "x"
+        duration: 2000
+        easing.type: Easing.OutElastic
+    }
+
+    NumberAnimation { id: _aniY; target: _rect; property: "y"; duration: 2000; easing.type: Easing.OutElastic }
+    ColorAnimation { id: _aniColor; target: _rect; property: "color"; duration: 2000; loops: Animation.Infinite }
 }
 
 

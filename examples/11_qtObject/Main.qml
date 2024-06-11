@@ -1,6 +1,6 @@
 import QtQuick
 import QtQuick.Window
 
-QtObjectInnerBefore { }
+// QtObjectInnerBefore { }
 // QtObjectInnerAfter { }
-// QtObjectSingletonConsumer { }
+QtObjectSingletonConsumer { }

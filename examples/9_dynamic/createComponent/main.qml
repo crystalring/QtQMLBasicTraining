@@ -16,7 +16,13 @@ Window {
             width: 50; height: 50; color: "red"
             MouseArea {
                 anchors.fill: parent
-                onClicked: { Scripts.createObject(first) }
+                onClicked: {
+
+                    var myComponent = Qt.createComponent("MySubRect.qml");
+                    myComponent.createObject(first);
+
+                    // Scripts.createObject(first)
+                }
             }
         }
         Rectangle {

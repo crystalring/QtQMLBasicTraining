@@ -18,6 +18,7 @@ qt_add_qml_module(appFlightAsi
     QML_FILES
         Main.qml
         FlightAsi.qml
+        FlightAsiV2.qml
     RESOURCES
         assets/asi_face.svg
         assets/asi_hand.svg

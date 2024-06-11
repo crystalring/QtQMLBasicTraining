@@ -2,7 +2,7 @@
 import QtQuick.Window
 
 // AnimationNone { }
-// AnimationStandalone { }
+AnimationStandalone { }
 // AnimationBehavior { }
-AnimationSequential { }
+// AnimationSequential { }
 

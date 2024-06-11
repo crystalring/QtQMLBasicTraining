@@ -1,4 +1,5 @@
 ﻿import QtQuick
 import QtQuick.Window
 
-FlightAsi { }
+// FlightAsi { }
+FlightAsiV2 { }

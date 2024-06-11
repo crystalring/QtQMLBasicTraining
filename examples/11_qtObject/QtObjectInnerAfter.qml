@@ -24,6 +24,7 @@ Window {
         id: _inner
 
         property int index: 0
+
         readonly property var heights: [150, 400, 150, 300, 150, 200]
 
         function updateRoot() {

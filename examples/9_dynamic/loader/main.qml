@@ -15,19 +15,53 @@ Window {
         font.pixelSize: 16
         text: loader.status != Loader.Ready ? "Click to add a rectangle!" : "Loaded!"
     }
+
+    // MouseArea {
+    //     anchors.fill: parent
+
+    //     onClicked: {
+    //         loader.source = "qrc:/MyRect.qml"
+    //     }
+
+    //     onDoubleClicked: {
+    //         if (loader.item !== undefined) {
+    //             loader.item.color = "blue"
+    //         }
+    //     }
+    // }
+
+    // Loader {
+    //     id: loader
+    //     anchors.centerIn: parent
+    // }
+
     MouseArea {
         anchors.fill: parent
+
         onClicked: {
-            loader.source = "qrc:/MyRect.qml"
+            loader.active = true
         }
+
         onDoubleClicked: {
-            if (loader.item !== undefined) {
-                loader.item.color = "blue"
-            }
+            loader.active = false
         }
     }
+
+    Component {
+        id: myrect
+
+        Rectangle {
+            width: 100
+            height: 100
+            color: "blue"
+        }
+    }
+
     Loader {
         id: loader
         anchors.centerIn: parent
+        // source: "qrc:/MyRect.qml"
+        sourceComponent: myrect
+        active: false
     }
 }
