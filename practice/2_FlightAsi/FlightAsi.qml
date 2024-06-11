@@ -52,14 +52,17 @@ Window {
             anchors.fill: parent
             hoverEnabled: true
             onClicked: (mouse) => {
-               const dx = (mouse.x - width / 2)
-               const dy = (mouse.y - height / 2)
-               const rad = Math.atan2(dy, dx)
-               const degree = rad / Math.PI * 180;
+                           const dx = (mouse.x - width / 2)
+                           const dy = (mouse.y - height / 2)
+                           const rad = Math.atan2(dy, dx)
+                           const degree = rad / Math.PI * 180;
 
-               needle.rotation = degree + 90
-               console.log(mouse.x, mouse.y, degree)
-           }
+                           needle.rotation = degree + 90
+                           console.log(mouse.x, mouse.y, degree)
+                       }
+            onEntered: {
+                console.log("Entered")
+            }
         }
     }
 }

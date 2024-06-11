@@ -1,4 +1,4 @@
-﻿import QtQuick
+import QtQuick
 import QtQuick.Window
 
 Window {
@@ -8,11 +8,23 @@ Window {
     visible: true
     title: qsTr("Hello World")
 
-    Rectangle {
+    Column {
+        anchors.centerIn: parent
+        spacing: 10
+
+        PushButton {
+
+        }
+
+        PushButton {
+
+        }
+    }
+
+    component PushButton : Rectangle {
         id: _rect
         width: 200
         height: 48
-        anchors.centerIn: parent
         focus: true
 
         color: "skyblue"
