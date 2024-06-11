@@ -33,6 +33,28 @@ Window {
             _rect.color = Qt.rgba(Math.random(), Math.random(), Math.random())
         }
     }
+
+    // Text {
+    //     id: _text
+    //     property int xx: 0
+
+    //     anchors.top: parent.top
+    //     anchors.right: parent.right
+    //     anchors.rightMargin: 20
+    //     text: xx
+    //     font.pixelSize: 48
+
+    //     Behavior on xx {
+    //         NumberAnimation { duration: 2000 }
+    //     }
+    // }
+
+    // MouseArea {
+    //     anchors.fill: parent
+    //     onClicked: {
+    //         _text.xx = 1000
+    //     }
+    // }
 }
 
 

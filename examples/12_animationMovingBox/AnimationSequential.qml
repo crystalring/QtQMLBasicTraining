@@ -24,18 +24,50 @@ Window {
     MouseArea {
         anchors.fill: parent
         onClicked: (mouse) => {
-            if (_aniAll.running)
-                _aniAll.stop();
+                       // if (_aniAll.running)
+                       // _aniAll.stop();
 
-            _aniX.to = mouse.x;
-            _aniY.to = mouse.y;
-            _aniColor.to = Qt.rgba(Math.random(), Math.random(), Math.random())
-            _aniAll.start();
-        }
+                       _aniX.to = mouse.x;
+                       _aniY.to = mouse.y;
+                       _aniColor.to = Qt.rgba(Math.random(), Math.random(), Math.random());
+
+                       // _aniX.start();
+                       // _aniY.start();
+                       // _aniColor.start();
+
+                       _aniAll.start()
+                   }
     }
+
+    // SequentialAnimation {
+    //     id: _aniAll
+    //     NumberAnimation { id: _aniX; target: _rect; property: "x"; duration: 500 }
+    //     PauseAnimation {
+    //         duration: 500
+    //     }
+
+    //     NumberAnimation { id: _aniY; target: _rect; property: "y"; duration: 500 }
+    //     PauseAnimation {
+    //         duration: 500
+    //     }
+    //     ColorAnimation { id: _aniColor; target: _rect; property: "color"; duration: 500 }
+    // }
+
+    // ParallelAnimation {
+    //     id: _aniAll
+    //     NumberAnimation { id: _aniX; target: _rect; property: "x"; duration: 500 }
+    //     NumberAnimation { id: _aniY; target: _rect; property: "y"; duration: 500 }
+    //     ColorAnimation { id: _aniColor; target: _rect; property: "color"; duration: 500 }
+    // }
 
     SequentialAnimation {
         id: _aniAll
+
+        PropertyAction {
+            target: _rect
+            property: "radius"
+            value: 0
+        }
 
         ParallelAnimation {
             NumberAnimation { id: _aniX; target: _rect; property: "x"; duration: 500 }
@@ -43,10 +75,20 @@ Window {
         }
 
         PauseAnimation { duration: 1000 }
+
+        PropertyAction {
+            target: _rect
+            property: "radius"
+            value: _rect.width / 2
+        }
+
         ColorAnimation { id: _aniColor; target: _rect; property: "color"; duration: 500 }
 
         onStarted: console.log("started...")
         onFinished: console.log("finished.")
+        onRunningChanged: {
+            console.log("running? ", running)
+        }
     }
 }
 

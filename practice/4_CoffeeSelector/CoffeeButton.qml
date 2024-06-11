@@ -15,6 +15,8 @@ Item {
         scale: _mouseArea.pressed ? 0.9 : 1.0
         anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
+
+        Behavior on scale { NumberAnimation { duration: 200 }}
     }
 
     Text {
@@ -31,9 +33,15 @@ Item {
         anchors.fill: parent
         onClicked: {
             _glow.visible = true
+            animation.start()
             _root.clicked()
         }
     }
+
+    // _glow, parallelAnimation
+    // 1. scale 1.05 -> 1.2
+    // 2. opacity 0.2 -> 1.0 -> 0.0 -> visible: false
+    // 3. border.width  20 -> pause 200ms -> 10
 
     Rectangle {
         id: _glow
@@ -44,5 +52,59 @@ Item {
         scale: 1.05
         color: "#00000000"
         border.color: "#ffffff"
+
+        ParallelAnimation {
+            id: animation
+
+            NumberAnimation {
+                target: _glow
+                property: "scale"
+                from: 1.05
+                to: 1.2
+                duration: 200
+            }
+
+            SequentialAnimation {
+                NumberAnimation {
+                    target: _glow
+                    property: "opacity"
+                    from: 0.2
+                    to: 1.0
+                    duration: 200
+                }
+                NumberAnimation {
+                    target: _glow
+                    property: "opacity"
+                    from: 1.0
+                    to: 0.0
+                    duration: 200
+                }
+                PropertyAction {
+                    target: _glow
+                    property: "visible"
+                    value: false
+                }
+            }
+
+            SequentialAnimation {
+                PropertyAction {
+                    target: _glow
+                    property: "border.width"
+                    value: 20
+                }
+
+                PauseAnimation {
+                    duration: 200
+                }
+
+                NumberAnimation {
+                    target: _glow
+                    property: "border.width"
+                    from: 20
+                    to: 10
+                    duration: 200
+                }
+            }
+        }
     }
 }
