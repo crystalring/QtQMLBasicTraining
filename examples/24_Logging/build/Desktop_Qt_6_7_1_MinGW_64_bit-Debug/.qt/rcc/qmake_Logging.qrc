@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/Logging">
-    <file alias="qmldir">C:/repo/QtQMLBasicTraining/examples/24_Logging/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Logging/qmldir</file>
-  </qresource>
-</RCC>
-
