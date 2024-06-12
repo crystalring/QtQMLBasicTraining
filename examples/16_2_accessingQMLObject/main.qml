@@ -7,9 +7,17 @@ Window {
     visible: true
 
     Rectangle {
+        id: rect
         objectName: "rectangle"
         width: 200; height: 100
         color: myBackgroundColor
+
+        Text {
+            id: textField
+            anchors.centerIn: parent
+            font.pixelSize: 18
+            text: myText
+        }
 
         function toggleText() {
             // Toggle the text field visibility. Notice that this could be
@@ -19,12 +27,6 @@ Window {
             textField.visible = !textField.visible;
         }
 
-        Text {
-            id: textField
-            anchors.centerIn: parent
-            font.pixelSize: 18
-            text: myText
-        }
 
         MouseArea {
             anchors.fill: parent

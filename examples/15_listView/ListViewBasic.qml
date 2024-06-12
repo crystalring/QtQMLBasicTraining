@@ -30,6 +30,9 @@ Window {
         model: _model
         delegate: _delegate
         spacing: 2
+        onCurrentIndexChanged: {
+            console.log(currentIndex)
+        }
     }
 
     Component {
@@ -38,6 +41,7 @@ Window {
         Rectangle {
             required property string name
             required property int point
+            required property int index
 
             id: _rect
             width: ListView.view.width
@@ -50,7 +54,7 @@ Window {
 
             Text {
                 anchors.centerIn: parent
-                text: _rect.name + `\n${_rect.point}`
+                text: _rect.name + `\n${_rect.point}`/* + _rect.index*/
                 horizontalAlignment: Text.AlignHCenter
             }
         }

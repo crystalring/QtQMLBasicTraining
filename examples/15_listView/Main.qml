@@ -2,6 +2,6 @@
 import QtQuick.Window
 
 // ListViewBasic { }
-// ListViewHeaderFooter { }
-ListViewHighlight { }
+ListViewHeaderFooter { }
+// ListViewHighlight { }
 // ListViewClickable { }

@@ -32,7 +32,17 @@ int main(int argc, char *argv[])
     // ...or by connecting a signal to it (in this case from a timer, could be any
     // custom signal as well)
     QTimer timer;
+
     QObject::connect(&timer, SIGNAL(timeout()), item, SLOT(toggleText()));
+
+    // ==
+    // Connections {
+    // target: timer
+    //         function onTriggered() {
+    //         rect.toggleText()
+    //     }
+    // }
+
     timer.setInterval(1000);
     timer.start();
 

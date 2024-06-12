@@ -7,10 +7,8 @@
 class MyDataSet : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QColor myBackgroundColor MEMBER mColor
-               NOTIFY myBackgroundColorChanged)
-    Q_PROPERTY(QString myText MEMBER mText
-               NOTIFY myTextChanged)
+    Q_PROPERTY(QColor myBackgroundColor MEMBER mColor NOTIFY myBackgroundColorChanged)
+    Q_PROPERTY(QString myText MEMBER mText NOTIFY myTextChanged)
 public:
     explicit MyDataSet(QObject *parent = 0);
 

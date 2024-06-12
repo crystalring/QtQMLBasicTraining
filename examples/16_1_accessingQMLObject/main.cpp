@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
     QObject *root = engine.rootObjects().at(0);
     QQuickItem *item = root->findChild<QQuickItem *>("blueRect");
     item->setRotation(45);
+    item->setX(150);
 
     return app.exec();
 }
