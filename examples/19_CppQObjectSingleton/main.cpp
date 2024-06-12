@@ -1,5 +1,6 @@
 ﻿#include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include "PersonVvip.h"
 
 
 int main(int argc, char *argv[])
@@ -8,6 +9,7 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     const QUrl url(u"qrc:/CppQObjectSingleton/Main.qml"_qs);
+
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed,
         &app, []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);

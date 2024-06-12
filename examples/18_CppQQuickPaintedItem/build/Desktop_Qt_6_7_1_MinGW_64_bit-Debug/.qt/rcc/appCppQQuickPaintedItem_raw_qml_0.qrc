@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/CppQQuickPaintedItem/">
-    <file alias="Main.qml">C:/repo/QtQMLBasicTraining/examples/18_CppQQuickPaintedItem/Main.qml</file>
-  </qresource>
-</RCC>
-

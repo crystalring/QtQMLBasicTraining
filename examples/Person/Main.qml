@@ -17,4 +17,13 @@ Window {
         text: _person.namename
         font.pixelSize: 50
     }
+
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {
+            _person.functionVoid()
+            let ret = _person.functionInt()
+            console.log(ret)
+        }
+    }
 }

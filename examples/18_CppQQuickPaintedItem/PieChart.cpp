@@ -38,12 +38,8 @@ void PieChart::paint(QPainter *painter)
         painter->setBrush(QBrush(_color, Qt::BDiagPattern));
         break;
     }
-
-
     painter->drawPie(boundingRect(), 90 * 16, 290 * 16);
 }
-
-
 
 int PieChart::style() const
 {

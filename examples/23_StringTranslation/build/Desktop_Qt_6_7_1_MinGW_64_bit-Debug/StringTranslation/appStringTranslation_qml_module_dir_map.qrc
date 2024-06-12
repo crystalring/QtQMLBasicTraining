@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/StringTranslation">C:/repo/QtQMLBasicTraining/examples/23_StringTranslation/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/StringTranslation</file>
-
-  </qresource>
-</RCC>

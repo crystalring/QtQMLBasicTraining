@@ -21,3 +21,13 @@ void Person::setNamename(const QString &newNamename)
     m_namename = newNamename;
     emit namenameChanged();
 }
+
+void Person::functionVoid()
+{
+    qDebug() << Q_FUNC_INFO;
+}
+
+int Person::functionInt()
+{
+    return 100;
+}

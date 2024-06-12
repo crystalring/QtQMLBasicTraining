@@ -1,6 +1,0 @@
-module CppListModel
-typeinfo appCppListModel.qmltypes
-prefer :/CppListModel/
-Main 1.0 Main.qml
-ListViewQmlModel 1.0 ListViewQmlModel.qml
-

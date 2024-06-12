@@ -5,15 +5,15 @@ Window {
     width: 640
     height: 480
     visible: true
-    title: "Application"
+    title: qsTr("Application!!")
 
     Column {
         anchors.centerIn: parent
 
         Repeater {
             model: [
-                "Hi",
-                "Good Morning"
+                qsTr("Hi"),
+                qsTr("Good Morning")
             ]
 
             delegate: Text {

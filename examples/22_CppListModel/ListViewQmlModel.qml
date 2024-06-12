@@ -1,5 +1,7 @@
 ﻿import QtQuick
 import QtQuick.Window
+import QtQuick.Controls
+import CppListModel
 
 Window {
     width: 400
@@ -7,27 +9,28 @@ Window {
     visible: true
     title: qsTr("Hello World")
 
-   ListModel {
-       id: _model
+    // ListModel {
+    //     id: _model
 
-       ListElement { name: "Marine";  point: 11 }
-       ListElement { name: "Firebat"; point: 34 }
-       ListElement { name: "SCV";     point: 27 }
-       ListElement { name: "Medic";   point: 18 }
-       ListElement { name: "Tank";    point: 29 }
-       ListElement { name: "Vulture"; point: 35 }
-       ListElement { name: "Marine";  point: 23 }
-       ListElement { name: "Firebat"; point: 23 }
-       ListElement { name: "SCV";     point: 32 }
-       ListElement { name: "Medic";   point: 33 }
-       ListElement { name: "Tank";    point: 15 }
-       ListElement { name: "Vulture"; point: 35 }
-   }
+    //     ListElement { name: "Marine";  point: 11 }
+    //     ListElement { name: "Firebat"; point: 34 }
+    //     ListElement { name: "SCV";     point: 27 }
+    //     ListElement { name: "Medic";   point: 18 }
+    //     ListElement { name: "Tank";    point: 29 }
+    //     ListElement { name: "Vulture"; point: 35 }
+    //     ListElement { name: "Marine";  point: 23 }
+    //     ListElement { name: "Firebat"; point: 23 }
+    //     ListElement { name: "SCV";     point: 32 }
+    //     ListElement { name: "Medic";   point: 33 }
+    //     ListElement { name: "Tank";    point: 15 }
+    //     ListElement { name: "Vulture"; point: 35 }
+    // }
+
 
     ListView {
         id: _view
         anchors.fill: parent
-        model: _model
+        model: cppModel
         delegate: _delegate
         spacing: 2
     }
@@ -65,5 +68,16 @@ Window {
             }
         }
     }
+
+    // Button {
+    //     width: 100
+    //     height: 100
+    //     anchors.top: parent.top
+    //     anchors.right: parent.right
+    //     onClicked: {
+    //         _model.append({ "name": "Marine",  "point": 11 })
+    //         _model.clear()
+    //     }
+    // }
 }
 

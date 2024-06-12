@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/CppQQuickPaintedItem">
-    <file alias="qmldir">C:/repo/QtQMLBasicTraining/examples/18_CppQQuickPaintedItem/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CppQQuickPaintedItem/qmldir</file>
-  </qresource>
-</RCC>
-

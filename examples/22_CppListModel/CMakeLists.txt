@@ -18,6 +18,9 @@ qt_add_qml_module(appCppListModel
     QML_FILES
         Main.qml
         ListViewQmlModel.qml
+    SOURCES
+        cppmodel.cpp
+        cppmodel.h
 )
 
 set_target_properties(appCppListModel PROPERTIES

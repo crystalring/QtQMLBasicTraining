@@ -22,6 +22,7 @@ public:
 
     QColor color() const;
     void setColor(const QColor &c);
+
     void paint(QPainter *painter);
 
     int style() const;
