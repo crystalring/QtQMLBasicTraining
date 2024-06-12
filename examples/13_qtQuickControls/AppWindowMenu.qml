@@ -23,6 +23,18 @@ ApplicationWindow {
         Menu {
             title: qsTr("Edit")
             Action { text: "Preferences..." }
+            Menu {
+                title: qsTr("Edit1")
+                Action { text: "Preferences1..." }
+                Menu {
+                    title: qsTr("Edit2")
+                    Action { text: "Preferences2..."
+                        onTriggered: {
+                            _root.title = "HellOOOOOOOOOOOOOOOOOOOO"
+                        }
+                    }
+                }
+            }
         }
 
         Menu {

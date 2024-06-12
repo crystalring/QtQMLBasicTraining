@@ -16,7 +16,18 @@ ApplicationWindow {
         Switch { text: "switch" }
         Button { text: "click me" }
         CheckBox { text: "check" }
-        RadioButton { text: "option" }
+        Row {
+            spacing: 10
+            CheckBox { text: "option1" }
+            CheckBox { text: "option2" }
+            CheckBox { text: "option3" }
+        }
+        Row {
+            spacing: 10
+            RadioButton { text: "option1" }
+            RadioButton { text: "option2" }
+            RadioButton { text: "option3" }
+        }
         SpinBox { value: 50 }
         Slider { from: 0; to: 100; width: 200 }
         RangeSlider {

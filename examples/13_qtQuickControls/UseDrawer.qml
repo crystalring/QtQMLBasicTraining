@@ -40,8 +40,8 @@ ApplicationWindow {
         id: _drawer
         width: _root.width * 0.7
         height: _root.height
-        edge: Qt.RightEdge
-        dragMargin: 20
+        edge: Qt.LeftEdge
+        dragMargin: 200
         background: Rectangle { color: "orange" }
 
         Label {

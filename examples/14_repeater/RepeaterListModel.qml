@@ -19,7 +19,6 @@ Window {
 
     ListModel {
         id: _model
-
         ListElement { name: "Marine";  point: 23 }
         ListElement { name: "Firebat"; point: 23 }
         ListElement { name: "SCV";     point: 23 }

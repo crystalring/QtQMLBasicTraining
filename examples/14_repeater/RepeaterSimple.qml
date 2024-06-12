@@ -2,19 +2,23 @@
 import QtQuick.Window
 
 Window {
+    id: root
     width: 640
     height: 480
     visible: true
     title: qsTr("Hello World")
 
-    Column {
+    property var array: ["Apple", "Banana", "Carrot", "DDDD", "EEEE", "QQQQ"]
+
+    Row {
         anchors.centerIn: parent
         spacing: 2
 
         Repeater {
-            model: 5
+            id: repeater
+            model: array
 
-            Rectangle {
+            delegate: Rectangle {
                 id: _rect
                 width: 60
                 height: 60
@@ -32,6 +36,13 @@ Window {
                     text: modelData
                 }
             }
+        }
+    }
+
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {
+            root.array = 10
         }
     }
 }
