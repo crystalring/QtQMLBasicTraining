@@ -35,8 +35,8 @@ Rectangle {
 
         SceneEnvironment {
             id: sceneEnvironment
-            backgroundMode: SceneEnvironment.Transparent
-            lightProbe: smokey1_4k
+            backgroundMode: SceneEnvironment.SkyBox
+            lightProbe: royal_esplanade_4k
             antialiasingMode: SceneEnvironment.MSAA
             antialiasingQuality: SceneEnvironment.High
         }
@@ -81,7 +81,7 @@ Rectangle {
 
 
         DebugView {
-            enabled: false
+            enabled: true
             anchors.right: parent.right
             anchors.top: parent.top
             anchors.topMargin: 50
@@ -266,7 +266,7 @@ Rectangle {
 
 /*##^##
 Designer {
-    D{i:0}D{i:3;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}D{i:5}
+    D{i:0}D{i:3;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}
 }
 ##^##*/
 
