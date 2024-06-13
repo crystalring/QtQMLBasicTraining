@@ -9,12 +9,12 @@ Item {
             spacing: 10
 
             TextBox {
-                state: "driver"
+                state: "@driver"
                 textItem.text: "생성형 AI와 대화 중이에요."
             }
 
             TextBox {
-                state: "passenger"
+                state: "@passenger"
                 textItem.text: "생성형 AI와 대화 중이에요."
             }
         }
@@ -35,13 +35,13 @@ Item {
 
 
                     TextBox {
-                        state: "ai"
+                        state: "@ai"
                         textItem.text: "생성형 AI와 대화 중이에요."
                     }
                 }
 
                 TextBox {
-                    state: "ai"
+                    state: "@ai"
                     textItem.text: "생성형 AI와 대화 중이에요. 생성형 AI와 대화 중이에요. 생성형 AI와 대화 중이에요. 생성형 AI와 대화 중이에요."
                 }
 
@@ -87,7 +87,7 @@ Item {
 
                             RadioButton {
                                 width: 200
-                                text: "default"
+                                text: "@default"
                                 font.pixelSize: 20
                                 checked: true
                                 ButtonGroup.group: stateButtonGroup
@@ -99,7 +99,7 @@ Item {
 
                             RadioButton {
                                 width: 200
-                                text: "driver"
+                                text: "@driver"
                                 font.pixelSize: 20
                                 ButtonGroup.group: stateButtonGroup
                                 background: Rectangle {
@@ -110,7 +110,7 @@ Item {
 
                             RadioButton {
                                 width: 200
-                                text: "passenger"
+                                text: "@passenger"
                                 font.pixelSize: 20
                                 ButtonGroup.group: stateButtonGroup
                                 background: Rectangle {
@@ -121,7 +121,7 @@ Item {
 
                             RadioButton {
                                 width: 200
-                                text: "ai"
+                                text: "@ai"
                                 font.pixelSize: 20
                                 ButtonGroup.group: stateButtonGroup
                                 background: Rectangle {
