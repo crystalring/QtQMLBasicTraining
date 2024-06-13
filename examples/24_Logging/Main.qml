@@ -35,39 +35,37 @@ Window {
         color: "pink"
     }
 
-//    MouseArea {
-//        anchors.fill: parent
-//        onClicked: aaa()
-//    }
+   MouseArea {
+       anchors.fill: parent
+       onClicked: logging()
+   }
 
-//    LoggingCategory {
-//        id: _cat
-//        name: "qml.main"
-//        defaultLogLevel: LoggingCategory.Debug
-//    }
+   LoggingCategory {
+       id: _cat
+       name: "qml.main"
+       defaultLogLevel: LoggingCategory.Debug
+   }
 
-//    Component.onCompleted: {
-////        console.log("this is log");
-////        console.debug("this is debug");
-////        console.info("this is info");
-////        console.warn("this is warn");
-////        console.error("this is error");
-////        aaa()
-//        console.log(_cat, "aaa")
-//    }
+   // Component.onCompleted: {
+   //     console.log("this is log");
+   //     console.debug("this is debug");
+   //     console.info("this is info");
+   //     console.warn("this is warn");
+   //     console.error("this is error");
+   //     console.log(_cat, "this is error")
+   // }
 
-//    function aaa() {
-//        console.info("trace ")
-//        console.trace()
-//        console.time("calc")
+   function logging() {
+       console.info("trace ")
+       console.trace()
+       console.time("calc")
 
-//        let a = 3;
+       let a = 3;
+       for (let i = 0; i < 100000000; ++i) {
+           a += i;
+       }
 
-//        for (let i = 0; i < 100000000; ++i) {
-//            a += i;
-//        }
-
-//        console.log("sum =", a);
-//        console.timeEnd("calc");
-//    }
+       console.log("sum =", a);
+       console.timeEnd("calc");
+   }
 }
